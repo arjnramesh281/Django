@@ -1,5 +1,5 @@
 """
-URL configuration for project project.
+URL configuration for student_management project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.1/topics/http/urls/
@@ -16,15 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('h1',views.fun1),
-    path('demo',views.fun),
-    path("home",views.home),
-    path("about",views.about),
-    path("contact",views.contact),
-    path("display",views.display),
-    path("add",views.add),
 ]

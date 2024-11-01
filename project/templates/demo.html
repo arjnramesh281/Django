@@ -16,5 +16,11 @@
 <body>
 
     <h1 style="text-align: center; color: brown;">welcome to all</h1>
+    <form action="" method="post">
+        {% csrf_token%}
+        <input type="text" placeholder="Name" name="name">
+        <input type="number" placeholder="Age" name="age">
+        <input type="submit" value="submit">
+    </form>
 </body>
 </html>
