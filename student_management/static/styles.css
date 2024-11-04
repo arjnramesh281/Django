@@ -1,0 +1,29 @@
+
+div{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+
+}
+
+div input{
+    display: flex;
+    width: 400px;
+    border-radius: 5px;
+    border-style: groove;
+}
+table{
+    margin: auto;
+}
+
+th{
+    background-color: bisque;
+}
+th,td{
+    border: 2px solid black;
+    width: 200px;
+    text-align: center;
+}
+.button{
+    text-align: center;
+}
