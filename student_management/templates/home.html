@@ -9,14 +9,24 @@
 </head>
 <body>
     <h1>Home</h1>
-    <div>
-        <form action="" method="post">
-            {% csrf_token %}
-            <input type="tel" name="roll_no" placeholder="Roll No.">
-            <input type="text" name="name" placeholder="Name">
-            <input type="tel" name="age" placeholder="Age">
-            <input type="submit" value="submit" class="button">
-        </form>
+    <div class="home">
+        <div class="main">
+            <form action="" method="post">
+                {% csrf_token %}
+                <div>
+                    <input type="tel" name="roll_no" placeholder="Roll No.">
+                </div>
+                <div>
+                    <input type="text" name="name" placeholder="Name">
+                </div>
+                <div>
+                    <input type="tel" name="age" placeholder="Age">
+                </div>
+                <div>
+                    <input type="submit" value="submit" class="button">
+                </div>
+            </form>
+        </div>
     </div>
 
     <table>
@@ -30,9 +40,13 @@
             <td>{{std.roll_no}}</td>
             <td>{{std.name}}</td>
             <td>{{std.age}}</td>
+            <td>
+                <a href="edit/{{std.roll_no}}">Edit</a>
+                <a href="delete/{{std.roll_no}}">Delete</a>
+            </td>
         </tr>
         {% endfor %}
     </table>
-    <img src="{% static 'images/mythical-dragon-beast-anime-style (4).jpg' %}" alt=""> 
+    <!-- <img src="{% static 'images/mythical-dragon-beast-anime-style (4).jpg' %}" alt="" width="100%" height="100%">  -->
 </body>
 </html>
