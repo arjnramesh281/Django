@@ -4,8 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'styles.css'%}">
+    <style>
+                /* Global reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f9;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f9;
+        }
+
+        /* Main container styling */
+        .main {
+            width: 100%;
+            max-width: 400px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Form elements styling */
+        form div {
+            margin-bottom: 15px;
+        }
+
+        input[type="tel"],
+        input[type="text"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        /* Input fields styling */
+        input[type="tel"],
+        input[type="text"] {
+            background-color: #fafafa;
+        }
+
+        input[type="tel"]:focus,
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #3a87ad;
+            box-shadow: 0 0 5px rgba(58, 135, 173, 0.3);
+        }
+
+        /* Submit button styling */
+        .button {
+            background-color: #3a87ad;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+        }
+
+        .button:hover {
+            background-color: #33709d;
+        }
+    </style>
 </head>
 <body>
     <h1>Edit Student</h1>

@@ -31,18 +31,20 @@
 
     <table>
         <tr>
+            <th>ID</th>
             <th>Roll No.</th>
             <th>Name</th>
             <th>Age</th>
         </tr>
         {% for std in students %}
         <tr>
+            <td>{{std.pk}}</td>
             <td>{{std.roll_no}}</td>
             <td>{{std.name}}</td>
             <td>{{std.age}}</td>
             <td>
-                <a href="edit/{{std.roll_no}}">Edit</a>
-                <a href="delete/{{std.roll_no}}">Delete</a>
+                <a href="edit/{{std.pk}}">Edit</a>
+                <a href="delete/{{std.pk}}">Delete</a>
             </td>
         </tr>
         {% endfor %}

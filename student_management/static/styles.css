@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+     background-color: #f4f4f9;
 }
 
 .home {
@@ -64,4 +65,16 @@ input[type="text"]:focus {
 
 .button:hover {
     background-color: #33709d;
+}
+
+table{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+th,td{
+    border: 2px solid black;
+    width: 200px;
+    text-align: center;
 }
